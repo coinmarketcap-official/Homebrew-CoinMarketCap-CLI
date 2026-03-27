@@ -11,7 +11,7 @@ class Cmc < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/coinmarketcap-official/CoinMarketCap-CLI/releases/download/v0.1.0/cmc_0.1.0_darwin_amd64.tar.gz"
-      sha256 "eb3e10952567d52156225a46dbb4226d82255d9f828780b630da9454b6a26b91"
+      sha256 "45c0d4158478776718d3fcd10a6ea7e9f687eb7ad1e44cdc88e7fb89cef301fa"
 
       define_method(:install) do
         bin.install "cmc"
@@ -19,7 +19,7 @@ class Cmc < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/coinmarketcap-official/CoinMarketCap-CLI/releases/download/v0.1.0/cmc_0.1.0_darwin_arm64.tar.gz"
-      sha256 "43212d350472c97026b5cbc02c1917783f7f748388ee1ea94f7e59a868a22c45"
+      sha256 "e39dbc8246776126f4d6f54d8062826ce7831aac9ec603b1541d73a6cf9d7dfa"
 
       define_method(:install) do
         bin.install "cmc"
@@ -30,14 +30,14 @@ class Cmc < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/coinmarketcap-official/CoinMarketCap-CLI/releases/download/v0.1.0/cmc_0.1.0_linux_amd64.tar.gz"
-      sha256 "277763f7ab3b3c138ee7eb935e53fa5dd2a9c2b2787e6508642a5ed153af0964"
+      sha256 "f1290982a1beafef5b19fc717c45c569a830561b06cb81d2230399fa3f316cc2"
       define_method(:install) do
         bin.install "cmc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/coinmarketcap-official/CoinMarketCap-CLI/releases/download/v0.1.0/cmc_0.1.0_linux_arm64.tar.gz"
-      sha256 "f2e5471e4a9fc23e37e6eae15f2ee8bcffd028db5e111afbb2bcab6bd56af6a1"
+      sha256 "753211c0c29b94704f328ab33bbf2f492d61aa2d5135cf5ccd9ec26bceebe859"
       define_method(:install) do
         bin.install "cmc"
       end
